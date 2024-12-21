@@ -1274,7 +1274,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(240, 89%, 47%); }
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  color: var(--davys-gray);
+  color: var(--bittersweet);
   font-size: var(--fs-8);
   text-transform: capitalize;
   margin-bottom: 3px;
