@@ -1,4 +1,4 @@
-'use strict';
+
 
 // modal variables
 const modal = document.querySelector('[data-modal]');
@@ -9,21 +9,26 @@ const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 const modalCloseFunc = function () { modal.classList.add('closed') }
 
 // modal eventListener
-modalCloseOverlay.addEventListener('click', modalCloseFunc);
-modalCloseBtn.addEventListener('click', modalCloseFunc);
+if (modalCloseOverlay) {
+  modalCloseOverlay.addEventListener('click', modalCloseFunc);
+}
+if (modalCloseBtn) {
+  modalCloseBtn.addEventListener('click', modalCloseFunc);
+}
 
 
 
 
 
 // notification toast variables
-const notificationToast = document.querySelector('[data-toast]');
 const toastCloseBtn = document.querySelector('[data-toast-close]');
+const notificationToast = document.querySelector('[data-notification-toast]');
 
-// notification toast eventListener
-toastCloseBtn.addEventListener('click', function () {
-  notificationToast.classList.add('closed');
-});
+if (toastCloseBtn) {
+  toastCloseBtn.addEventListener('click', function () {
+    notificationToast.classList.add('closed');
+  });
+}
 
 
 
@@ -86,3 +91,23 @@ for (let i = 0; i < accordionBtn.length; i++) {
   });
 
 }
+
+function switchTheme(theme) {
+  const lightTheme = document.getElementById('light-theme');
+  const darkTheme = document.getElementById('dark-theme');
+  
+  if (lightTheme) {
+    lightTheme.disabled = theme !== 'light';
+  }
+  
+  if (darkTheme) {
+    darkTheme.disabled = theme !== 'dark';
+  }
+
+  localStorage.setItem('theme', theme);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const savedTheme = localStorage.getItem('theme') || 'dark'; // Default to dark theme if no theme is saved
+  switchTheme(savedTheme);
+});
