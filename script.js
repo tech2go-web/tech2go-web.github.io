@@ -108,6 +108,6 @@ function switchTheme(theme) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  const savedTheme = localStorage.getItem('theme') || 'dark'; // Default to dark theme if no theme is saved
+  const savedTheme = localStorage.getItem('theme') || 'light';
   switchTheme(savedTheme);
 });
