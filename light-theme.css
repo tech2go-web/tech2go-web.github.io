@@ -22,7 +22,7 @@
     --dark-gray1: hsl(22, 79%, 39%);
     --white3: rgb(0, 0, 0);
     --dark-gray: hsl(0, 0%, 100%);
-    --white4: rgb(255, 136, 0);
+    --white4: rgbrgb(210 116 0);
   
     /**
      * typography
@@ -521,7 +521,7 @@
   .header-main {
     padding: 20px 0;
     border-bottom: 1px solid var(--white3);
-    background: rgb(220 116 0);
+    background: rgb(210 116 0);
   }
   
   .header-logo { margin-bottom: 20px; }
@@ -1947,7 +1947,7 @@
   \*-----------------------------------*/
   
   footer {
-    background:rgb(220 116 0);
+    background: rgb(210 116 0);
     padding: 30px 0;
   }
   
@@ -2172,7 +2172,7 @@
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid var(--white3);
-      background: rgb(220 116 0);
+      background: rgb(210 116 0);
     }
   
     .header-social-container,
