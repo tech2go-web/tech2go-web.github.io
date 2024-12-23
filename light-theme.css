@@ -521,7 +521,7 @@
   .header-main {
     padding: 20px 0;
     border-bottom: 1px solid var(--white3);
-    background: rgb(255, 136, 0);
+    background: rgb(220 116 0);
   }
   
   .header-logo { margin-bottom: 20px; }
@@ -1947,7 +1947,7 @@
   \*-----------------------------------*/
   
   footer {
-    background:rgb(255, 136, 0);
+    background:rgb(220 116 0);
     padding: 30px 0;
   }
   
@@ -2172,7 +2172,7 @@
       display: block;
       padding: 10px 0;
       border-bottom: 1px solid var(--white3);
-      background: rgb(255, 136, 0);
+      background: rgb(220 116 0);
     }
   
     .header-social-container,
